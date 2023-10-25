@@ -41,6 +41,9 @@
 
         /* Reload button styles */
         #reload-button {
+            position: absolute;
+            top: 20px;
+            left: 280px;
             background-color: #FF6B6B; /* Light red color */
             border: none;
             color: white;
@@ -58,14 +61,6 @@
         #reload-button:hover {
             background-color: #FF4646; /* Slightly darker red color on hover */
         }
-
-        /* Reload button container styles */
-        #reload-button-container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px;
-        }
     </style>
 </head>
 <body>
@@ -74,10 +69,7 @@
         Your browser does not support the audio element.
     </audio>
     <div class="recipe-container">
-        <div id="reload-button-container">
-            <p>A delightful Tea Recipe</p>
-            <button id="reload-button">↻</button>
-        </div>
+        <p>A delightful Tea Recipe</p>
         <ul>
             <li>Place a stove on a flat surface.</li>
             <li>Set a teapot on the stove.</li>
@@ -90,6 +82,10 @@
             <source src="talk.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video> -->
+
+        <!-- Add the Reload button -->
+        <button id="reload-button">↻
+        </button>
 
         <script src="sketch.js"></script>
         <script>
